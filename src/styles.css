@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'bulma/css/bulma.css';
+
+/* we have added this style here, because this class is used in the global styling provided by the dom (shown only when inspecting the page)
+which means, it is not a part of any other component (and it is not an explicit class of the page-list component) */
+.searchmatch {
+    font-weight: bold;
+}

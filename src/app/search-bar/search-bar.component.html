@@ -2,6 +2,8 @@
 from user, we can use the following syntax to update the term attribute directly, without having 
 to wirte a helping function -->
 <!-- we implement the form element, because we have to submit information -->
-<form (submit)="onFormSubmit($event)">
-    <input type="text" (input)="term=($any($event).target.value)" />
-</form>
+<div>
+    <form (submit)="onFormSubmit($event)">
+        <input placeholder="Enter Search Term" class="input" type="text" (input)="term=($any($event).target.value)" />
+    </form>
+</div>
