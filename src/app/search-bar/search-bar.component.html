@@ -1,0 +1,7 @@
+<!-- instead of wirintg an onInput method to update the term attribute value with the input 
+from user, we can use the following syntax to update the term attribute directly, without having 
+to wirte a helping function -->
+<!-- we implement the form element, because we have to submit information -->
+<form (submit)="onFormSubmit($event)">
+    <input type="text" (input)="term=($any($event).target.value)" />
+</form>

@@ -1,0 +1,17 @@
+<table class="table is-striped">
+    <thead>
+        <tr>
+            <th> Title </th>
+            <th> Word Count </th>
+            <th>Snippet</th>
+        </tr>
+    </thead>
+    <body>
+        <tr *ngFor="let page of pages">
+            <!-- here we write the attributes of page exactly as they are on the returned json format -->
+            <td>{{page.title}}</td>
+            <td>{{page.wordcount}}</td>
+            <td>{{page.snippet}}</td>
+        </tr>
+    </body>
+</table>
